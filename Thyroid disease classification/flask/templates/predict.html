@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home</title>
+<style>
+ body
+ {
+ background-image:url("https://media.istockphoto.com/id/1198780608/photo/human-thyroid-anatomy.jpg?s=612x612&w=0&k=20&c=A96BQGdc57yAqHZI3cS2xrHJTPcUBvXsXQqdNSWh8jA=");
+ background-size:cover;
+ }
+ h3.big
+ {
+ line-height:1.8;
+ }
+</style>
+</head>
+<body>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-md-12 bg-light text-right">
+<a href="/home" class="btn btn-info btn-lg">Home</a>
+<a href="/predict" class="btn btn-primary disabled btn-lg">Predict</a>
+</div>
+</div>
+<br>
+<h1><strong><p style="color: orange">Thyroid disease Classification</p></strong></h1>
+<h4>
+<form action = "/pred", method="POST">
+    <center>
+<div><br>
+
+<div class="form-group mb-3">
+<div class="input-group-prepend">
+    <label  class="input-group-text" for="goitre">goitre</label>
+</div>
+<select class="custom-select" id="goitre" name="goitre">
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+</div><br>
+
+<div><br>
+<div class="form-group mb-3">
+<div class="input-group-prepend">
+    <label  class="input-group-text" for="tumor">tumor</label>
+</div>
+<select class="custom-select" id="tumor" name="tumor">
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+</div><br>
+    <div class="form-group mb-3">
+<div class="input-group-prepend">
+    <label  class="input-group-text" for="hypo-pituitary">hypo-pituitary</label>
+</div>
+<select class="custom-select" id="hypo-pituitary" name="hypo-pituitary">
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+</div><br>
+
+<div><br>
+<div class="form-group mb-3">
+<div class="input-group-prepend">
+    <label  class="input-group-text" for="pysch">pysch</label>
+</div>
+<select class="custom-select" id="pysch" name="pysch">
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+</div><br>
+<div class="form-group row">
+<div class="col-md-3">
+<label for="TSH">TSH</label>
+<input type="text" class="form-control" name="TSH" placeholder="TSH">
+</div>
+<div><br>
+
+<div class="form-group row">
+<div class="col-md-3">
+<label for="T3">T3</label>
+<input type="text" class="form-control" name="T3" placeholder="T3">
+</div>
+<div><br>
+
+
+<div class="form-group row">
+<div class="col-md-3">
+<label for="TT4">TT4</label>
+<input type="text" class="form-control" name="TT4" placeholder="TT4">
+</div>
+<div><br>
+
+
+
+<div class="form-group row">
+<div class="col-md-3">
+<label for="T4U">T4U</label>
+<input type="text" class="T4U" name="T4U" placeholder="T4U">
+</div>
+<div><br>
+
+
+
+<div class="form-group row">
+<div class="col-md-3">
+<label for="FTI">FTI</label>
+<input type="text" class="form-control" name="FTI" placeholder="FTI">
+</div>
+<div><br>
+    <div class="form-group row">
+<div class="col-md-3">
+<label for="TBG">TBG</label>
+<input type="text" class="form-control" name="TBG" placeholder="TBG">
+</div>
+<div><br>
+
+<button type="submit" class="btn btn-success btn-lg">Submit</button>
+<br>
+</h4>
+</div>
+   </center>
+</form>
+
+<script src="https://ajax.googleapix.com/ajax/libs/jquer/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
